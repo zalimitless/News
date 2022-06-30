@@ -9,13 +9,17 @@
  <br>
  <h1 id="countDown">3</h1>
  <script>
-    var countDownLabel = document.getElementById("countDown");
     var countDownCounter = 3;
     var timer = setTimeout(function() {
+        var countDownLabel = document.getElementById("countDown");
         countDownLabel.innerHTML = countDownCounter;
         countDownCounter--;
+
+        if(countDownCounter === 0)
+        {
         window.location='https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-    }, 3000);
+        }
+    }, 1000);
 </script>
 </body>
 </html>
