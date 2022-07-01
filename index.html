@@ -4,22 +4,12 @@
 <title>News article</title>
 
 </head>
-<body style="text-align: center; margin-top: 50px;">
+<body style="text-align: center; margin-top: 20%;">
  <h1>You <b>LOST</b> the <b>GAME!</b></h1>
- <br>
- <h1 id="countDown">3</h1>
  <script>
-    var countDownCounter = 3;
     var timer = setTimeout(function() {
-        var countDownLabel = document.getElementById("countDown");
-        countDownLabel.innerHTML = countDownCounter;
-        countDownCounter -= 1;
-
-        if(countDownCounter === 0)
-        {
-         window.location='https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-        }
-    }, 1000);
+       window.location='https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+    }, 3000);
 </script>
 </body>
 </html>
